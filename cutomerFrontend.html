@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script  type="text/javascript" src="formChecker.js"></script> -->
+        <script src= "funcCheck.js"></script>
+        <title>Webstore program</title>
+
+        <center><h1 style="text-decoration-color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome to my toy store!</h1></center>
+        <h2 style = "font-size: medium; text-align: center; text-decoration-color: aquamarine; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">You can find various action figures here of cool fictious characters!</h2>
+
+        <link rel="stylesheet" href="stle.css">
+    </head>
+
+    <body>
+        <form id= 'store' action = "customerBackend.php" method = "post" onsubmit="return checkform();">
+            <div class="Toys">
+               <image src="https://media.gamestop.com/i/gamestop/11096587/McFarlane-Toys-Cyberpunk-2077-Male-V-7-in-Action-Figure" style="height: 300px;"></image>
+               <figcaption> <label > Cyberpunk Action figure for $100</label><br> </figcaption>
+               <input type="number" name="Toy1" id="Toy1" min="0" size="1">
+            </div>
+
+            <div class="Toys">
+                <image src="https://www.toysrus.ca/dw/image/v2/BDFX_PRD/on/demandware.static/-/Sites-toys-master-catalog/default/dwe1470e49/images/C489B8F4_1.jpg?sw=767&sh=767&sm=fit" style="height: 300px;"></image>
+                <figcaption> <label > Batman and Bane figure for $150</label><br> </figcaption>
+                <input type="number" name="Toy2" id="Toy2" min="0" size="1">
+            </div>
+
+            <div class="Toys">
+                <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIyvK2JrCGTI1s06fbxHek0vGnKcgose-WNw&usqp=CAU" style="height: 300px;"></image>
+                <figcaption> <label > God of War figure for $200</label><br> </figcaption>
+                <input type="number" name="Toy3" id="Toy3" min="0" size="1">
+            </div>
+
+            <div class="Toys">
+                <image src="https://m.media-amazon.com/images/I/81pESG3az5L._AC_SL1500_.jpg" style="height: 300px;"></image>
+                <figcaption> <label > One Piece figure for $250</label><br> </figcaption>
+                <input type="number" name="Toy4" id="Toy4" min="0" size="1">
+            </div>
+
+            <div class="Toys">
+                <image src="https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/e0ac67d423a749c48a43a178d4e0fdae_Large.jpg" style="height: 300px;"></image>
+                <figcaption> <label > Spiderman figure for $300</label><br> </figcaption>
+                <input type="number" name="Toy5" id="Toy5" min="0" size="1">
+            </div>
+
+                <div class= "deliveryMethod">
+                    <h3>Delivery Choices:</h3>
+                    <input name="choice" type="radio" value="Normal" id="7days"> Free 7 day 
+                    <input name="choice" type="radio" value="Valued" id="overnight"> $5.00 over night 
+                    <input name="choice" type="radio" value="Premium" id="nexthr"> $15.00 next hour
+                        </div>
+                </div>
+
+                <div class="customer">
+                    <h3>User Login</h3>
+                    <label>online login:</label>
+                    <input type="email" class="onlineid" name="onlineid" id="onlineid">
+                    <br></br><label>Password:</label>
+                    <input type="password" class="passcode" name="passcode" id="passcode">
+                    <br></br>
+                    <!-- <button value="Submit" id="Add">Submit</button> -->
+                    <input type="submit" value="Submit.">
+
+                    </div>
+                 </div>
+                
+                <input type="reset" value="Reset everything!">
+        </form>      
+
+    </body>
+</html>
+
